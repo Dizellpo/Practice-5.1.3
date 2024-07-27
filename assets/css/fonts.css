@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: local("TT Lakes Regular"),
+    local("TTLakes-Regular"),
+    url("../fonts/TTLakes-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: local("TT Lakes Medium"),
+    local("TTLakes-Medium"),
+    url("../fonts/TTLakes-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: local("TT Lakes Bold"),
+    local("TTLakes-Bold"),
+    url("../fonts/TTLakes-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+/* only-woff2; о поддержке woff, ttf, eot знаю, но пропустил для упрощения данной задачки */

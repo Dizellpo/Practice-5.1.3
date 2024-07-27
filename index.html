@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 5.1.3</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="body">
+    <section class="brands">
+        <div class="brands__header">
+            <h1 class="brands__headline">Ремонт техники различных брендов</h1>
+        </div>
+        <template id="brand-template">    
+            <li class="brands__item">
+                <a class="brands__link" href="#">
+                    <img src="./assets/img/brand-1.png" alt=""
+                class="brands__logo">
+                </a>
+            </li>
+        </template>
+        <template id="swiper-template">
+            <li class="brands__item swiper-slide">
+                <a class="brands__link" href="#">
+                    <img src="./assets/img/brand-1.png" alt=""
+                class="brands__logo">
+                </a>
+            </li>
+        </template>
+        <div class="brands__slider brands__slider--show">
+            <ul class="brands__list list-reset">
+            </ul>
+            <button class="brands__show-more show-more-btn link">
+                Показать все
+            </button>
+        </div>
+        <div class="brands__slider-mobile brands__slider-mobile--hide swiper mySwiper">
+            <div class="brands__list swiper-wrapper"> 
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
