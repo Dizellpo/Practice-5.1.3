@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
-    let brandsSlider = document.querySelector('.brands__slider');
-    let brandsSliderMobile = document.querySelector('.brands__slider-mobile');
-    let brandsList = document.querySelector('.brands__list');
-    let brandsListMobile = brandsSliderMobile.querySelector('.brands__list');
+    const brandsSlider = document.querySelector('.brands__slider');
+    const brandsSliderMobile = document.querySelector('.brands__slider-mobile');
+    const brandsList = document.querySelector('.brands__list');
+    const brandsListMobile = brandsSliderMobile.querySelector('.brands__list');
 
-    let brandsItems = brandsList.children;
-    let brandsItemsMobile = brandsListMobile.children;
-    let brandItemTemplateMobile = document.querySelector('#swiper-template').content.querySelector('.brands__item');
-    let brandItemTemplate = document.querySelector('#brand-template').content;
-    let brandItem = brandItemTemplate.querySelector('.brands__item');
-    let showMoreBtn = document.querySelector('.show-more-btn');
-    let showMoreBtnText = showMoreBtn.textContent;
+    const brandsItems = brandsList.children;
+    const brandsItemsMobile = brandsListMobile.children;
+    const brandItemTemplateMobile = document.querySelector('.swiper-template').content.querySelector('.brands__item');
+    const brandItemTemplate = document.querySelector('.brand-template').content;
+    const brandItem = brandItemTemplate.querySelector('.brands__item');
+    const showMoreBtn = document.querySelector('.show-more-btn');
+    const showMoreBtnText = showMoreBtn.textContent;
 
     let setSliderItems = function (numOfElems) {
         let screenWidth = window.innerWidth;
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let itemsToDisplay = brandsItems.length - 3;
             console.log(itemsToDisplay);
             for (let j = brandsItems.length; j = itemsToDisplay; j--) {
-                if (brandsItems[j] != undefined) {
+                if (brandsItems[j]) {
                     brandsItems[j].remove();
                 } else {
                     break;
